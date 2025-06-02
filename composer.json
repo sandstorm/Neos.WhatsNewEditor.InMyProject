@@ -1,0 +1,18 @@
+{
+    "description": "Nodetypes for the Neos CMS for creating content which the can be shown via the corresponding What's New Dashboard package.",
+    "type": "neos-package",
+    "name": "flowpack/neos-whatsnewdashboard-editorial",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flowpack\\Neos\\WhatsNewDashboard\\Editorial\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Flowpack.Neos.WhatsNewDashboard.Editorial"
+        }
+    }
+}
