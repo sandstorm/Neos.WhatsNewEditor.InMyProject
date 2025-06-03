@@ -1,0 +1,12 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Text':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Text': true
+  ui:
+    label: Text
+    icon: icon-file-text
+    position: 10
+  properties:
+    text:
+      options:
+        silhouette: 'text.free'

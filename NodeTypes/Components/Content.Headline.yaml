@@ -1,0 +1,27 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Headline
+    icon: icon-header
+    position: 5
+  properties:
+    title:
+      type: string
+      defaultValue: '<h2>Headline</h2>'
+      ui:
+        label: Headline
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: Headline
+            linking:
+              anchor: true
+              title: true
+              relNofollow: true
+              targetBlank: true
+            formatting:
+              h1: true
+              h2: true
+              h3: true
+              h4: true

@@ -1,0 +1,7 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Headline {
+        title = Neos.Neos:Editable {
+            property = 'title'
+        }
+    }
+}

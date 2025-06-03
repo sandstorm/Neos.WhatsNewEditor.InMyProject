@@ -1,0 +1,17 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    group: whatsNewDashboard
+    label: 'What’s New Dashboard Page'
+    icon: icon-file-text
+  constraints:
+    nodeTypes:
+      '*': false
+      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline': true
+  childNodes:
+    main:
+      type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Default
+  properties:
+    _hiddenInIndex:
+      defaultValue: true

@@ -1,0 +1,32 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Text':
+  abstract: true
+  properties:
+    text:
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: Enter text...
+            autoparagraph: true
+            linking:
+              anchor: true
+              title: true
+              relNofollow: true
+              targetBlank: true
+            formatting:
+              strong: true
+              em: true
+              p: true
+              h2: true
+              h3: true
+              h4: true
+              removeFormat: true
+              ol: true
+              ul: true
+              a: true
+              left: true
+              right: true
+              center: true
+              justify: true
+              table: true

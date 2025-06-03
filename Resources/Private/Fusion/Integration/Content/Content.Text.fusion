@@ -1,0 +1,7 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Text) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Text {
+        text = Neos.Neos:Editable {
+            property = 'text'
+        }
+    }
+}

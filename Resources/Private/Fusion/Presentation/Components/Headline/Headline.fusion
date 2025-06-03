@@ -1,0 +1,12 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Headline) < prototype(Neos.Fusion:Component) {
+    title = ''
+
+    @propTypes {
+        @strict = true
+        title = ${PropTypes.string}
+    }
+
+    renderer = afx`
+        {props.title}
+    `
+}

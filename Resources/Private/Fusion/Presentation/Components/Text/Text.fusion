@@ -1,0 +1,11 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Text) < prototype(Neos.Fusion:Component) {
+    text = ''
+
+    @propTypes {
+        @strict = true
+        text = ${PropTypes.string}
+    }
+    renderer = afx`
+        {props.text}
+    `
+}

@@ -1,0 +1,12 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        Flowpack.Neos.WhatsNewDashboard.Editorial: true
+    nodeTypes:
+      groups:
+        whatsNewDashboard:
+          position: 80
+          label: "What's new dashboard elements"
+          collapsed: false
+
