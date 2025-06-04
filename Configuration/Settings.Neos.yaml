@@ -9,4 +9,7 @@ Neos:
           position: 80
           label: "What's new dashboard elements"
           collapsed: false
-
+  Flow:
+    mvc:
+      routes:
+        Flowpack.Neos.WhatsNewDashboard.Editorial: true

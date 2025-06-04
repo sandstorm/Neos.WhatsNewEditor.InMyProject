@@ -1,0 +1,12 @@
+privilegeTargets:
+
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:WhatsNewInProjectController':
+      matcher: 'method(Flowpack\Neos\WhatsNewDashboard\Editorial\Controller\WhatsNewInProjectController->(.*)Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+     privileges:
+      -
+         privilegeTarget: 'Flowpack.Neos.WhatsNewDashboard.Editorial:WhatsNewInProjectController'
+         permission: GRANT

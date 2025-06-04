@@ -5,6 +5,11 @@
     group: whatsNewDashboard
     label: 'What’s New Dashboard Page'
     icon: icon-file-text
+    inspector:
+      groups:
+        properties:
+          label: Properties
+          tab: default
   constraints:
     nodeTypes:
       '*': false
@@ -15,3 +20,12 @@
   properties:
     _hiddenInIndex:
       defaultValue: true
+    clientNotificationDateTime:
+      type: DateTime
+      ui:
+        label: 'Client notification date time'
+        defaultValue: now
+        inspector:
+          group: 'properties'
+          editorOptions:
+            format: 'd.m.Y H:i'

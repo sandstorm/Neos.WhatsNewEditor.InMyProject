@@ -1,0 +1,9 @@
+- name: Whats new in project Controller
+  uriPattern: 'api/whats-new/in-project'
+  defaults:
+    '@package': 'Flowpack.Neos.WhatsNewDashboard.Editorial'
+    '@controller': 'WhatsNewInProject'
+    '@action': 'index'
+    #'@format': 'json'
+  appendExceedingArguments: false
+  httpMethods: [ 'GET' ]
