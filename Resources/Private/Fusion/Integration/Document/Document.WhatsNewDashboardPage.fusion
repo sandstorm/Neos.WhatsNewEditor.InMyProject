@@ -1,4 +1,20 @@
 prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage) < prototype(Neos.Neos:Page) {
+    head {
+        stylesheets = Neos.Fusion:Join {
+            mainCSS = Neos.Fusion:Tag {
+                tagName = 'link'
+                attributes.rel = 'stylesheet'
+                attributes.href = Neos.Fusion:ResourceUri {
+                    path = 'resource://Flowpack.Neos.WhatsNewDashboard.Editorial/Public/main.css'
+                }
+            }
+        }
+    }
+
+    bodyTag.attributes {
+        class.whatsNew = 'whats-new-dashboard__page'
+    }
+
     body >
 
     body = Neos.Fusion:Join {
