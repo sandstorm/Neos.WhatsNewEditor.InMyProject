@@ -27,7 +27,7 @@ class WhatsNewInProjectController extends ActionController
         $clientNotificationDateTime = $node->getProperty('clientNotificationDateTime');
 
         return json_encode([
-            "clientNotificationTimestamp" => $clientNotificationDateTime->getTimestamp()
+            "clientNotificationTimestamp" => $clientNotificationDateTime->getTimestamp() * 1000 // to get timestamp in ms instead of seconds to match js timestamp
         ]);
     }
 
