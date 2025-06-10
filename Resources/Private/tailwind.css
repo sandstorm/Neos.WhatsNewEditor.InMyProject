@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .whats-new-dashboard__page {
+    margin-inline: 0;
+
+    background: rgba(34, 34, 34, 1);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.whats-new-dashboard__page section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-block: 60px;
+
+    @media all and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        padding-block: 40px;
+    }
+}
+
+.whats-new-dashboard__page section + section {
+    border-top: 1px solid #fff;
+}
+
+.whats-new-dashboard__page section .neos-contentcollection > *:first-child {
+    margin-top: 0;
+}
+
+.whats-new-dashboard__page section .neos-contentcollection > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Backend Styles */
+/*.whats-new-dashboard__page.neos-backend {
+    margin-inline: 20px;
+} */

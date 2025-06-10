@@ -1,0 +1,20 @@
+{
+  "name": "whats-new-dashboard-editorial",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "yarn run typecheck && yarn run build:tailwind && yarn run build:js",
+    "build:tailwind": "npx tailwindcss -i ./tailwind.css -o ../Public/main.css",
+    "build:js": "node ./build.mjs",
+    "postbuild:css": "./node_modules/.bin/postcss --use autoprefixer --autoprefixer.browsers 'last 4 versions' ../Public/*.css -d ../Public/",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.14.53",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4",
+    "typescript": "^5.8.3"
+  }
+}
