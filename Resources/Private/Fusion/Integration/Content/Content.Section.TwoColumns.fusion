@@ -1,5 +1,8 @@
 prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns) < prototype(Neos.Neos:ContentComponent) {
     renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.TwoColumns {
+        hashLinkId = ${q(node).property('sectionTitle')}
+        hashLinkId.@process.toLowerCase = ${String.toLowerCase(value)}
+        hashLinkId.@process.replace = ${String.replace(value, ' ', '-')}
         contentColumn1 = Neos.Fusion:Join {
             mainContent = Neos.Neos:ContentCollection {
                 nodePath = 'column1'

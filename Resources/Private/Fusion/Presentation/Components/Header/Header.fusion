@@ -1,0 +1,32 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Header) < prototype(Neos.Fusion:Component) {
+    headline = ''
+    introText = ''
+    menuEntries = null
+
+    @propTypes {
+        @strict = true
+        headline = ${PropTypes.string}
+        introText = ${PropTypes.string}
+        menuEntries = ${PropTypes.arrayOf(PropTypes.string)}
+    }
+
+    renderer = afx`
+        <header class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[1400px] py-10 sm:py-16 border-b border-b-grey-light">
+            <div>
+                <h1>{props.headline}</h1>
+                {props.introText}
+            </div>
+            <div>
+                <h2>Quicklinks</h2>
+                <nav>
+                    <ul>
+                        <Neos.Fusion:Loop items={props.menuEntries}>
+                            <li><a href={'#' + String.replace(String.toLowerCase(item), ' ', '-')}>{item}</a></li>
+                        </Neos.Fusion:Loop>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    `
+}

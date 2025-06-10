@@ -1,6 +1,8 @@
 'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns':
   superTypes:
     'Neos.Neos:Content': true
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral': true
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.SectionTitle': true
   ui:
     label: Section (2 columns)
     icon: icon-swatchbook
@@ -10,4 +12,3 @@
       type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section
     column2:
       type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section
-

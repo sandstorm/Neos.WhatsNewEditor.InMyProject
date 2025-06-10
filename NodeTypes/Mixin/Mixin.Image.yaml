@@ -1,11 +1,7 @@
 'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Image':
   abstract: true
-  ui:
-    inspector:
-      groups:
-        image:
-          label: Image
-          tab: default
+  superTypes:
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral': true
   properties:
     image:
       type: Neos\Media\Domain\Model\ImageInterface

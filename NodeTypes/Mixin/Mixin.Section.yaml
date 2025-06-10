@@ -1,0 +1,16 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.SectionTitle':
+  abstract: true
+  properties:
+    sectionTitle:
+      type: string
+      ui:
+        label: Section title
+        reloadIfChanged: false
+        showInCreationDialog: true
+        inspector:
+          group: 'properties'
+        help:
+          message: 'Is used for the naming of the quicklinks in the header of this document'
+      validation:
+        Neos.Neos/Validation/NotEmptyValidator: {}
+

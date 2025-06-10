@@ -1,0 +1,12 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        properties:
+          label: Properties
+          tab: default
+        image:
+          label: Image
+          icon: 'icon-image'
+          tab: default

@@ -27,11 +27,17 @@
         src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewDashboard.Editorial/Fonts/BricolageGrotesque-ExtraBold.ttf') format('truetype');
     }
 
+    html,
     body {
-        @apply bg-black;
-        @apply text-white;
+        @apply scroll-smooth;
+    }
+
+    body {
         @apply antialiased;
 
         @apply mx-0;
+
+        @apply bg-black;
+        @apply text-white;
     }
 }

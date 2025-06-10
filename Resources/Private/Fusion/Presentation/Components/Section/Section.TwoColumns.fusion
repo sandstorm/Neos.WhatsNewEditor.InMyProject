@@ -1,15 +1,17 @@
 prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.TwoColumns) < prototype(Neos.Fusion:Component) {
+    hashLinkId = ''
     contentColumn1 = ''
     contentColumn2 = ''
 
     @propTypes {
         @strict = true
+        hashLinkId = ${PropTypes.string}
         contentColumn1 = ${PropTypes.string}
         contentColumn2 = ${PropTypes.string}
     }
 
     renderer = afx`
-        <section class={AtomicFusion.classNames(
+        <section id={props.hashLinkId} class={AtomicFusion.classNames(
             '[&_.neos-contentcollection>*+*]:mt-10',
             'first:[&>.neos-contentcollection>*]:mt-0 last:[&>.neos-contentcollection>*]:mb-0',
             'max-w-[1400px]',

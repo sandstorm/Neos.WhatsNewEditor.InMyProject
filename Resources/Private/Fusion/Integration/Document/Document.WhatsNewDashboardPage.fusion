@@ -29,6 +29,20 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPa
     body = Neos.Fusion:Join {
         main = Flowpack.Neos.WhatsNewDashboard.Editorial:Layout.Default {
             content = Neos.Fusion:Join {
+                header = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Header {
+                    headline = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.DocumentEditableProperty {
+                        node = ${documentNode}
+                        property = 'headline'
+                    }
+                    introText = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.DocumentEditableProperty {
+                        node = ${documentNode}
+                        property = 'introText'
+                    }
+                    menuEntries = Neos.Fusion:Map {
+                        items = ${q(documentNode).find('[instanceof Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.OneColumn], [instanceof Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns]').get()}
+                        itemRenderer = ${q(item).property('sectionTitle')}
+                    }
+                }
                 mainContent = Neos.Neos:ContentCollection {
                     nodePath = 'main'
                 }

@@ -1,15 +1,11 @@
 'Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage':
   superTypes:
     'Neos.Neos:Document': true
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral': true
   ui:
     group: whatsNewDashboard
     label: 'What’s New Dashboard Page'
     icon: icon-file-text
-    inspector:
-      groups:
-        properties:
-          label: Properties
-          tab: default
   constraints:
     nodeTypes:
       '*': false
@@ -19,6 +15,27 @@
   properties:
     _hiddenInIndex:
       defaultValue: true
+    headline:
+      type: string
+      ui:
+        label: Headline
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: Enter headline here...
+    introText:
+      type: string
+      ui:
+        label: Intro text
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: Enter intro text here...
+            formatting:
+              strong: true
+              em: true
+              p: true
+              removeFormat: true
     clientNotificationDateTime:
       type: DateTime
       ui:
