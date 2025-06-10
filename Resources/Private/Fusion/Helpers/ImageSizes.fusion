@@ -1,0 +1,27 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.ImageSizes) < prototype(Neos.Fusion:Component) {
+    type = ''
+
+    @propTypes {
+        @strict = true
+        type = ${PropTypes.oneOf(['', 'two-column'])}
+    }
+
+    // This helper is intended to make it easier to choose the right (Kaleidoscope) sizes for different column layouts.
+    // It currently supports standard columns that are only linearized on mobile screens ('two-column', 'three-column', 'four-column')
+    // and wrapping columns that have different column counts depending on the screen size ('three-column--wrap', 'four-column--wrap').
+    // This obviously only makes sense if the css wrapping is built accordingly.
+    renderer = Neos.Fusion:Case {
+        twoColumn {
+            condition = ${props.type == 'two-column'}
+            renderer = ${[
+                '(min-width: 768px) calc(100vw / 2)',
+                '100vw'
+            ]}
+        }
+        default {
+            condition = true
+            // Sizes="100vw" means the image file is swapped out based on the total width of the viewport.
+            renderer = ${['100vw']}
+        }
+    }
+}

@@ -5,4 +5,5 @@
     nodeTypes:
       'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline': true
       'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Text': true
+      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Image': true
 

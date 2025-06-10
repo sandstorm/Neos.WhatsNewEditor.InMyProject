@@ -1,0 +1,16 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.ResourceUri) < prototype(Neos.Fusion:Component) {
+    resource = null
+
+    renderer = Neos.Fusion:Case {
+        noResourceSet {
+            condition = ${!props.resource}
+            renderer = ''
+        }
+        default {
+            condition = true
+            renderer = Neos.Fusion:ResourceUri {
+                resource = ${props.resource}
+            }
+        }
+    }
+}

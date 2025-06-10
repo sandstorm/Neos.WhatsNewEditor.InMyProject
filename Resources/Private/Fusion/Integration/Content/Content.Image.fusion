@@ -1,0 +1,8 @@
+// Integration component for the image node type
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Image) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image {
+        image = Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Image
+
+        imageDescription = ${q(node).property('imageDescription')}
+    }
+}

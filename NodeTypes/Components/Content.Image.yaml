@@ -1,0 +1,8 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Image': true
+  ui:
+    label: Image
+    icon: icon-picture
+    position: 20
