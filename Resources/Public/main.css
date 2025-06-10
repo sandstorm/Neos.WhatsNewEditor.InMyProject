@@ -706,3 +706,7 @@ body {
 .last\:\[\&\>\.neos-contentcollection\>\*\]\:mb-0>.neos-contentcollection>*:last-child {
   margin-bottom: 0px;
 }
+
+.\[\&_\.text\]\:max-w-md .text {
+  max-width: 28rem;
+}

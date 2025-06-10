@@ -1,0 +1,19 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.OneColumn) < prototype(Neos.Fusion:Component) {
+    contentColumn1 = ''
+
+    @propTypes {
+        @strict = true
+        contentColumn1 = ${PropTypes.string}
+    }
+
+    renderer = afx`
+        <section class={AtomicFusion.classNames(
+            'first:[&>.neos-contentcollection>*]:mt-0 last:[&>.neos-contentcollection>*]:mb-0',
+            'max-w-[1400px]',
+            'py-10 sm:py-16',
+            '[&+section]:border-t [&+section]:border-t-grey-light'
+        )}>
+            {props.contentColumn1}
+        </section>
+    `
+}

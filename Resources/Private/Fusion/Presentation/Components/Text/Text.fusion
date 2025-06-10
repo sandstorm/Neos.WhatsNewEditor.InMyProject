@@ -6,7 +6,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Text) < prototype(
         text = ${PropTypes.string}
     }
     renderer = afx`
-        <div class="max-w-md">
+        <div class="text">
             {props.text}
         </div>
     `

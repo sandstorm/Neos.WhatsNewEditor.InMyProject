@@ -1,0 +1,10 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.OneColumn':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Section (1 column)
+    icon: icon-swatchbook
+    position: 5
+  childNodes:
+    column1:
+      type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section

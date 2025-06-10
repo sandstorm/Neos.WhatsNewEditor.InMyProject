@@ -1,0 +1,9 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.OneColumn) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.OneColumn {
+        contentColumn1 = Neos.Fusion:Join {
+            mainContent = Neos.Neos:ContentCollection {
+                nodePath = 'column1'
+            }
+        }
+    }
+}

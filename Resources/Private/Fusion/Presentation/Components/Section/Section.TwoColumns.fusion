@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.TwoColumns) < prototype(Neos.Fusion:Component) {
     contentColumn1 = ''
     contentColumn2 = ''
 
@@ -14,14 +14,11 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section) < prototy
             'max-w-[1400px]',
             'grid grid-cols-1 sm:grid-cols-2 gap-10',
             'py-10 sm:py-16',
-            '[&+section]:border-t [&+section]:border-t-grey-light'
+            '[&+section]:border-t [&+section]:border-t-grey-light',
+            '[&_.text]:max-w-md'
         )}>
-            <div>
-                {props.contentColumn1}
-            </div>
-            <div>
-                {props.contentColumn2}
-            </div>
+            {props.contentColumn1}
+            {props.contentColumn2}
         </section>
     `
 }

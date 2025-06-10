@@ -3,4 +3,5 @@
     'Neos.Neos:ContentCollection': true
   constraints:
     nodeTypes:
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section': true
+      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.OneColumn': true
+      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns': true
