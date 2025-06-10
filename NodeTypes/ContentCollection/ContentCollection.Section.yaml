@@ -1,0 +1,8 @@
+'Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section':
+  superTypes:
+    'Neos.Neos:ContentCollection': true
+  constraints:
+    nodeTypes:
+      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline': true
+      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Text': true
+

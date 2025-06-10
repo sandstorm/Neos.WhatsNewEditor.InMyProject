@@ -13,7 +13,6 @@
   constraints:
     nodeTypes:
       '*': false
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline': true
   childNodes:
     main:
       type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Default

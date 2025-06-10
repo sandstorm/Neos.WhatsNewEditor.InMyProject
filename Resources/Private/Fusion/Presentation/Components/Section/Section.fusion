@@ -1,0 +1,21 @@
+prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section) < prototype(Neos.Fusion:Component) {
+    contentColumn1 = ''
+    contentColumn2 = ''
+
+    @propTypes {
+        @strict = true
+        contentColumn1 = ${PropTypes.string}
+        contentColumn2 = ${PropTypes.string}
+    }
+
+    renderer = afx`
+        <section>
+            <div>
+                {props.contentColumn1}
+            </div>
+            <div>
+                {props.contentColumn2}
+            </div>
+        </section>
+    `
+}
