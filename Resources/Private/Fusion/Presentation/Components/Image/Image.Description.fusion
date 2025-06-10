@@ -7,6 +7,6 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Description)
     }
 
     renderer = afx`
-        <span @if.imageDescription={props.imageDescription} class="block text-sm text-left text-grey-light">{props.imageDescription}</span>
+        <span @if.imageDescription={props.imageDescription} class="block text-left text-white mt-4">{props.imageDescription}</span>
     `
 }

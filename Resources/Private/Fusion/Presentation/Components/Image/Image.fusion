@@ -4,7 +4,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image) < prototype
     imageDescription = ''
 
     // default class
-    class = 'w-full h-full flex flex-col mb-8'
+    class = 'w-full h-full flex flex-col'
 
     @propTypes {
         @strict = true

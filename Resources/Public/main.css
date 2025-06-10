@@ -670,6 +670,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -784,6 +792,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -811,6 +823,26 @@ body {
   margin-bottom: 0px;
 }
 
+.\[\&_\.neos-contentcollection\>\*\+\&_\.neos-contentcollection\>\*\]\:mt-16 .neos-contentcollection>*+.\[\&_\.neos-contentcollection\>\*\+\&_\.neos-contentcollection\>\*\]\:mt-16 .neos-contentcollection>* {
+  margin-top: 4rem;
+}
+
+.\[\&_\.neos-contentcollection\>\*\+\*\]\:mt-16 .neos-contentcollection>*+* {
+  margin-top: 4rem;
+}
+
+.\[\&_\.neos-contentcollection\>\*\+\*\]\:mt-10 .neos-contentcollection>*+* {
+  margin-top: 2.5rem;
+}
+
+.\[\&_\.neos-contentcollection\>\*\+_\.neos-contentcollection\>\*\]\:mt-16 .neos-contentcollection>*+ .neos-contentcollection>* {
+  margin-top: 4rem;
+}
+
 .\[\&_\.text\]\:max-w-md .text {
   max-width: 28rem;
+}
+
+.\[\&_\.text\]\:max-w-4xl .text {
+  max-width: 56rem;
 }
