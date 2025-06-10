@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "watch": "concurrently \"yarn run watch:tailwind\" \"yarn run watch:js\" \"yarn run watch:typecheck\"",
+    "watch:tailwind": "npx tailwindcss -i ./tailwind.css -o ../Public/main.css --watch",
+    "watch:js": "node ./build.mjs --watch",
+    "watch:typecheck": "nodemon -e ts -x \"yarn run typecheck || echo '!!!!!!!!!!!!!!!!!!!!!! TypeScript Errors, Please fix !!!!!!!!!!!!!!!!!!!!!!'\"",
     "build": "yarn run typecheck && yarn run build:tailwind && yarn run build:js",
     "build:tailwind": "npx tailwindcss -i ./tailwind.css -o ../Public/main.css",
     "build:js": "node ./build.mjs",
@@ -12,7 +16,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
     "esbuild": "^0.14.53",
+    "nodemon": "^3.1.10",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^3.4",
     "typescript": "^5.8.3"

@@ -9,7 +9,13 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section) < prototy
     }
 
     renderer = afx`
-        <section>
+        <section class={AtomicFusion.classNames(
+            'first:[&>.neos-contentcollection>*]:mt-0 last:[&>.neos-contentcollection>*]:mb-0',
+            'max-w-[1400px]',
+            'grid grid-cols-1 sm:grid-cols-2 gap-10',
+            'py-10 sm:py-16',
+            '[&+section]:border-t [&+section]:border-t-grey-light'
+        )}>
             <div>
                 {props.contentColumn1}
             </div>

@@ -21,6 +21,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPa
 
     bodyTag.attributes {
         class.whatsNew = 'whats-new-dashboard__page'
+        class.inBackend = ${node.context.inBackend ? 'mx-10' : null}
     }
 
     body >

@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            sans: ['Arial', 'Helvetica', 'sans-serif'],
+            sans: ['"Bricolage Grotesque"', ...defaultTheme.fontFamily.sans],
         },
         extend: {
             colors: {
@@ -19,12 +20,10 @@ module.exports = {
                 white: '#fff',
                 black: '#222',
                 grey: {
-                    main: '#434343',
-                    light: '#868686',
-                    lighter: '#dadada',
-                    dark: '#282828',
+                    main: '#323232',
+                    light: '#979797',
                 },
-                error: '#d71a06',
+                error: '#d8d8d8',
             },
         },
     },
@@ -42,28 +41,34 @@ module.exports = {
                     fontWeight: 400
                 },
                 h1: {
-                    fontSize: '3.2rem',
-                    lineHeight: 1.2
+                    fontSize: '4rem',
+                    lineHeight: 1.2,
+                    fontWeight: 900
                 },
                 h2: {
-                    fontSize: '2.9rem',
-                    lineHeight: 1.2
+                    fontSize: '4rem',
+                    lineHeight: 1.2,
+                    fontWeight: 900
                 },
                 h3: {
-                    fontSize: '1.6rem',
-                    lineHeight: 1.2
+                    fontSize: '2rem',
+                    lineHeight: 1.2,
+                    fontWeight: 700
                 },
                 h4: {
-                    fontSize: '1.2rem',
-                    lineHeight: 1.2
+                    fontSize: '2rem',
+                    lineHeight: 1.2,
+                    fontWeight: 700
                 },
                 h5: {
-                    fontSize: '1.1rem',
-                    lineHeight: 1.2
+                    fontSize: '1rem',
+                    lineHeight: 1.2,
+                    fontWeight: 700
                 },
                 h6: {
                     fontSize: '1rem',
-                    lineHeight: 1.2
+                    lineHeight: 1.2,
+                    fontWeight: 700
                 },
             })
         }),
