@@ -40,4 +40,16 @@
         @apply bg-black;
         @apply text-white;
     }
+
+    a {
+        @apply text-primary-main;
+        @apply font-bold;
+        @apply underline;
+
+        &:hover,
+        &:focus,
+        &:active {
+            @apply text-primary-dark;
+        }
+    }
 }

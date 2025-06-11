@@ -11,13 +11,18 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Header) < prototyp
     }
 
     renderer = afx`
-        <header class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[1400px] py-10 sm:py-16 border-b border-b-grey-light">
-            <div>
-                <h1>{props.headline}</h1>
-                {props.introText}
+        <header class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[1400px] pb-10 sm:pb-16 border-b border-b-grey-light">
+            <div class="flex flex-col justify-between">
+                <div class="[&>*+*]:mt-10">
+                    <h1>{props.headline}</h1>
+                    <div class="text-3xl">{props.introText}</div>
+                </div>
             </div>
-            <div>
-                <h2>Quicklinks</h2>
+            <div class="[&>*+*]:mt-10">
+                <h2>
+                    Quicklinks<br />
+                    Last updates
+                </h2>
                 <nav>
                     <ul>
                         <Neos.Fusion:Loop items={props.menuEntries}>

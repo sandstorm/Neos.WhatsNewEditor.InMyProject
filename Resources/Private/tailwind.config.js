@@ -43,32 +43,38 @@ module.exports = {
                 h1: {
                     fontSize: '4rem',
                     lineHeight: 1.2,
-                    fontWeight: 900
+                    fontWeight: 900,
+                    hyphens: 'auto'
                 },
                 h2: {
                     fontSize: '4rem',
                     lineHeight: 1.2,
-                    fontWeight: 900
+                    fontWeight: 900,
+                    hyphens: 'auto'
                 },
                 h3: {
                     fontSize: '2rem',
                     lineHeight: 1.2,
-                    fontWeight: 700
+                    fontWeight: 700,
+                    hyphens: 'auto'
                 },
                 h4: {
                     fontSize: '2rem',
                     lineHeight: 1.2,
-                    fontWeight: 700
+                    fontWeight: 700,
+                    hyphens: 'auto'
                 },
                 h5: {
                     fontSize: '1rem',
                     lineHeight: 1.2,
-                    fontWeight: 700
+                    fontWeight: 700,
+                    hyphens: 'auto'
                 },
                 h6: {
                     fontSize: '1rem',
                     lineHeight: 1.2,
-                    fontWeight: 700
+                    fontWeight: 700,
+                    hyphens: 'auto'
                 },
             })
         }),

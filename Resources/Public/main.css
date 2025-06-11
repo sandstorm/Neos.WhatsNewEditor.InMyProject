@@ -570,36 +570,48 @@ h1 {
   font-size: 4rem;
   line-height: 1.2;
   font-weight: 900;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 h2 {
   font-size: 4rem;
   line-height: 1.2;
   font-weight: 900;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 1.2;
   font-weight: 700;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 h4 {
   font-size: 2rem;
   line-height: 1.2;
   font-weight: 700;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 h5 {
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 700;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 h6 {
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 700;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 @font-face {
@@ -652,6 +664,19 @@ body {
   background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+a {
+  --tw-text-opacity: 1;
+  color: rgb(0 174 239 / var(--tw-text-opacity, 1));
+  font-weight: 700;
+  text-decoration-line: underline;
+  &:hover,
+        &:focus,
+        &:active {
+    --tw-text-opacity: 1;
+    color: rgb(0 137 188 / var(--tw-text-opacity, 1));
+  }
 }
 
 .absolute {
@@ -727,6 +752,10 @@ body {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -754,12 +783,21 @@ body {
   padding-bottom: 2.5rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-white {
@@ -776,6 +814,10 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
+  }
 }
 
 .\[\&\+section\]\:border-t+section {
@@ -785,6 +827,10 @@ body {
 .\[\&\+section\]\:border-t-grey-light+section {
   --tw-border-opacity: 1;
   border-top-color: rgb(151 151 151 / var(--tw-border-opacity, 1));
+}
+
+.\[\&\>\*\+\*\]\:mt-10>*+* {
+  margin-top: 2.5rem;
 }
 
 .first\:\[\&\>\.neos-contentcollection\>\*\]\:mt-0>.neos-contentcollection>*:first-child {
