@@ -20,8 +20,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPa
     }
 
     bodyTag.attributes {
-        class.whatsNew = 'whats-new-dashboard__page'
-        class.inBackend = ${node.context.inBackend ? 'mx-10' : null}
+        class.whatsNew = 'whats-new-dashboard__page max-w-[1500px] mx-auto px-10 pt-10 sm:pt-16'
     }
 
     body >

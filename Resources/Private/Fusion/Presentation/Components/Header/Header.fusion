@@ -11,7 +11,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Header) < prototyp
     }
 
     renderer = afx`
-        <header class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[1400px] pb-10 sm:pb-16 border-b border-b-grey-light">
+        <header class="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-10 sm:pb-16 border-b border-b-grey-light">
             <div class="flex flex-col justify-between">
                 <div class="[&>*+*]:mt-10">
                     <h1>{props.headline}</h1>

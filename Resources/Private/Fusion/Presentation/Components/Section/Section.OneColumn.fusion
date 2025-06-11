@@ -12,7 +12,6 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.OneColumn)
         <section id={props.hashLinkId} class={AtomicFusion.classNames(
             '[&_.neos-contentcollection>*+*]:mt-10',
             'first:[&>.neos-contentcollection>*]:mt-0 last:[&>.neos-contentcollection>*]:mb-0',
-            'max-w-[1400px]',
             'py-10 sm:py-16',
             '[&+section]:border-t [&+section]:border-t-grey-light',
             '[&_.text]:max-w-4xl'
