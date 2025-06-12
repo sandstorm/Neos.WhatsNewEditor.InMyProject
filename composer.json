@@ -12,7 +12,7 @@
     ],
     "require": {
         "neos/flow": "*",
-        "sitegeist/kaleidoscope": "^3.2"
+        "sitegeist/kaleidoscope": "*"
     },
     "license": "MIT",
     "support": {
