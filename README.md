@@ -10,9 +10,9 @@ As long as it is not released:
 ```json
 "repositories": {
     ...
-    "neos-whatsnewdashboard-editorial": {
+    "neos-whatsneweditor-inmyproject": {
         "type": "vcs",
-        "url": "https://github.com/sandstorm/Neos.WhatsNewDashboard.Editorial"
+        "url": "https://github.com/sandstorm/Neos.WhatsNewEditor.InMyProject"
     },
     ...
 },
@@ -21,13 +21,13 @@ As long as it is not released:
 ```json
 "require": {
     ...,
-    "flowpack/neos-whatsnewdashboard-editorial": "@dev",
+    "flowpack/neos-whatsneweditor-inmyproject": "@dev",
     ...
 }
 ```
 
 After release:
-* install via composer with `composer require flowpack/neos-whatsnewdashboard-editorial`
+* install via composer with `composer require flowpack/neos-whatsneweditor-inmyproject`
 
 ### Usage
 * add `'Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage': true` to your root (or another) page > this is the entrypoint for the news
