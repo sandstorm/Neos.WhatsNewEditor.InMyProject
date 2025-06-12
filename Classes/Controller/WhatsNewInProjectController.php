@@ -1,5 +1,5 @@
 <?php
-namespace Flowpack\Neos\WhatsNewDashboard\Editorial\Controller;
+namespace Flowpack\Neos\WhatsNewEditor\InMyProject\Controller;
 
 use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\ContentRepository\Domain\Service\ContextFactoryInterface;
