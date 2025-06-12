@@ -1,4 +1,4 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Headline':
   superTypes:
     'Neos.Neos:Content': true
   ui:

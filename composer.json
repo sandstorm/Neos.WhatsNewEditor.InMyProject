@@ -1,8 +1,8 @@
 {
-    "name": "flowpack/neos-whatsnewdashboard-editorial",
+    "name": "flowpack/neos-whatsneweditor-inmyproject",
     "type": "neos-package",
     "description": "Nodetypes for the Neos CMS for creating content which then can be shown via the corresponding What's New Dashboard package.",
-    "homepage": "https://github.com/sandstorm/Neos.WhatsNewDashboard.Editorial",
+    "homepage": "https://github.com/sandstorm/Neos.WhatsNewEditor.InMyProject",
     "keywords": [
         "Neos",
         "Flow",
@@ -16,17 +16,17 @@
     },
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/sandstorm/Neos.WhatsNewDashboard.Editorial/issues",
-        "source": "https://github.com/sandstorm/Neos.WhatsNewDashboard.Editorial"
+        "issues": "https://github.com/sandstorm/Neos.WhatsNewEditor.InMyProject/issues",
+        "source": "https://github.com/sandstorm/Neos.WhatsNewEditor.InMyProject"
     },
     "autoload": {
         "psr-4": {
-            "Flowpack\\Neos\\WhatsNewDashboard\\Editorial\\": "Classes/"
+            "Flowpack\\Neos\\WhatsNewEditor\\InMyProject\\": "Classes/"
         }
     },
     "extra": {
         "neos": {
-            "package-key": "Flowpack.Neos.WhatsNewDashboard.Editorial"
+            "package-key": "Flowpack.Neos.WhatsNewEditor.InMyProject"
         }
     },
     "config": {

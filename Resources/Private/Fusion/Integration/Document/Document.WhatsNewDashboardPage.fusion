@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage) < prototype(Neos.Neos:Page) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage) < prototype(Neos.Neos:Page) {
     @if.render = ${Security.isAuthenticated()}
     // TODO: Maybe redirect to 404 when not authenticated
 
@@ -8,7 +8,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPa
                 tagName = 'link'
                 attributes.rel = 'stylesheet'
                 attributes.href = Neos.Fusion:ResourceUri {
-                    path = 'resource://Flowpack.Neos.WhatsNewDashboard.Editorial/Public/main.css'
+                    path = 'resource://Flowpack.Neos.WhatsNewEditor.InMyProject/Public/main.css'
                 }
             }
         }
@@ -26,19 +26,19 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPa
     body >
 
     body = Neos.Fusion:Join {
-        main = Flowpack.Neos.WhatsNewDashboard.Editorial:Layout.Default {
+        main = Flowpack.Neos.WhatsNewEditor.InMyProject:Layout.Default {
             content = Neos.Fusion:Join {
-                header = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Header {
-                    headline = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.DocumentEditableProperty {
+                header = Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Header {
+                    headline = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.DocumentEditableProperty {
                         node = ${documentNode}
                         property = 'headline'
                     }
-                    introText = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.DocumentEditableProperty {
+                    introText = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.DocumentEditableProperty {
                         node = ${documentNode}
                         property = 'introText'
                     }
                     menuEntries = Neos.Fusion:Map {
-                        items = ${q(documentNode).find('[instanceof Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.OneColumn], [instanceof Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns]').get()}
+                        items = ${q(documentNode).find('[instanceof Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.OneColumn], [instanceof Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.TwoColumns]').get()}
                         itemRenderer = ${q(item).property('sectionTitle')}
                     }
                 }

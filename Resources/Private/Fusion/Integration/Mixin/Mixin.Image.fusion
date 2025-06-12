@@ -1,11 +1,11 @@
 // Single integration component to render only an image.
 // Expects that an image property is present on the node (image mixin is used)
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Image) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.Image) < prototype(Neos.Fusion:Component) {
     // default sizes, can be overwritten
-    sizes = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.ImageSizes {
+    sizes = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.ImageSizes {
         type = Neos.Fusion:Case {
             contentInTwocolumn {
-                condition = ${q(node).parents('[instanceof Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns]').get()}
+                condition = ${q(node).parents('[instanceof Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.TwoColumns]').get()}
                 renderer = 'two-column'
             }
             default {
@@ -18,11 +18,11 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Image) < prototype(Neo
     imgClasses = 'max-w-full h-auto'
     pictureClasses = 'inline-block'
 
-    renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Only {
+    renderer = Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Image.Only {
         imageSource = Sitegeist.Kaleidoscope:AssetImageSource {
             asset = ${q(node).property('image')}
         }
-        imageUri = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.ResourceUri {
+        imageUri = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.ResourceUri {
             resource = ${q(node).property('image').resource}
         }
         fileExtension = ${q(node).property('image').resource.fileExtension}

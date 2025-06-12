@@ -1,4 +1,4 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Text':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.Text':
   abstract: true
   properties:
     text:

@@ -1,11 +1,11 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.DocumentEditableProperty) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.DocumentEditableProperty) < prototype(Neos.Fusion:Component) {
     node = ${node}
     property = null
     block = true
 
     renderer = Neos.Fusion:Case {
         editable {
-            condition = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.InBackend
+            condition = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.InBackend
             renderer = Neos.Fusion:Tag {
                 tagName = ${props.block ? 'div' : 'span'}
                 content = Neos.Neos:Editable {

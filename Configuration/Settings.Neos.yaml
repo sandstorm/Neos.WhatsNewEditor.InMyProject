@@ -2,7 +2,7 @@ Neos:
   Neos:
     fusion:
       autoInclude:
-        Flowpack.Neos.WhatsNewDashboard.Editorial: true
+        Flowpack.Neos.WhatsNewEditor.InMyProject: true
     nodeTypes:
       groups:
         whatsNewDashboard:
@@ -12,4 +12,4 @@ Neos:
   Flow:
     mvc:
       routes:
-        Flowpack.Neos.WhatsNewDashboard.Editorial: true
+        Flowpack.Neos.WhatsNewEditor.InMyProject: true

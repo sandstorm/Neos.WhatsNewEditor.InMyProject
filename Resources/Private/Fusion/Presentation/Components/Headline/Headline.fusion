@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Headline) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Headline) < prototype(Neos.Fusion:Component) {
     title = ''
 
     @propTypes {

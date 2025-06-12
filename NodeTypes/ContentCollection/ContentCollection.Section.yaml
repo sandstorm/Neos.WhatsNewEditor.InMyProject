@@ -1,9 +1,9 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:ContentCollection.Section':
   superTypes:
     'Neos.Neos:ContentCollection': true
   constraints:
     nodeTypes:
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Headline': true
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Text': true
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Image': true
+      'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Headline': true
+      'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Text': true
+      'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Image': true
 

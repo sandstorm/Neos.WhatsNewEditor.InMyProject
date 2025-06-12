@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.ImagePlaceholder) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Component.ImagePlaceholder) < prototype(Neos.Fusion:Component) {
     aspectRatio = ${16 / 9}
     showPlaceholderText = true
 

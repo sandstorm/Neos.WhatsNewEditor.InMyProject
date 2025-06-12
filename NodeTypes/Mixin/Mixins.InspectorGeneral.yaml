@@ -1,4 +1,4 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.InspectorGeneral':
   abstract: true
   ui:
     inspector:

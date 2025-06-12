@@ -1,5 +1,5 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns) < prototype(Neos.Neos:ContentComponent) {
-    renderer = Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.TwoColumns {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.TwoColumns) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Section.TwoColumns {
         hashLinkId = ${q(node).property('sectionTitle')}
         hashLinkId.@process.toLowerCase = ${String.toLowerCase(value)}
         hashLinkId.@process.replace = ${String.replace(value, ' ', '-')}

@@ -23,7 +23,7 @@ class WhatsNewInProjectController extends ActionController
     {
         $rootNode = $this->getSiteNode();
         $flowQuery = new FlowQuery([$rootNode]);
-        $node = $flowQuery->find('[instanceof Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage]')->get(0);
+        $node = $flowQuery->find('[instanceof Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage]')->get(0);
         $clientNotificationDateTime = $node->getProperty('clientNotificationDateTime');
 
         return json_encode([

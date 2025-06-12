@@ -1,7 +1,7 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Default':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:ContentCollection.Default':
   superTypes:
     'Neos.Neos:ContentCollection': true
   constraints:
     nodeTypes:
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.OneColumn': true
-      'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns': true
+      'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.OneColumn': true
+      'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.TwoColumns': true

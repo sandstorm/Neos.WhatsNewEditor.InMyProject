@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Layout.Default) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Layout.Default) < prototype(Neos.Fusion:Component) {
     content = ''
 
     @propTypes {

@@ -1,14 +1,14 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Content.Section.TwoColumns':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Content.Section.TwoColumns':
   superTypes:
     'Neos.Neos:Content': true
-    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral': true
-    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.SectionTitle': true
+    'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.InspectorGeneral': true
+    'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.SectionTitle': true
   ui:
     label: Section (2 columns)
     icon: icon-swatchbook
     position: 10
   childNodes:
     column1:
-      type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section
+      type: Flowpack.Neos.WhatsNewEditor.InMyProject:ContentCollection.Section
     column2:
-      type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Section
+      type: Flowpack.Neos.WhatsNewEditor.InMyProject:ContentCollection.Section

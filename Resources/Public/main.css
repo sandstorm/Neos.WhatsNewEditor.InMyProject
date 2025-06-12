@@ -623,7 +623,7 @@ h6 {
 
   font-display: swap;
 
-  src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewDashboard.Editorial/Fonts/BricolageGrotesque-Regular.ttf') format('truetype');
+  src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewEditor.InMyProject/Fonts/BricolageGrotesque-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -635,7 +635,7 @@ h6 {
 
   font-display: swap;
 
-  src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewDashboard.Editorial/Fonts/BricolageGrotesque-Bold.ttf') format('truetype');
+  src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewEditor.InMyProject/Fonts/BricolageGrotesque-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -647,7 +647,7 @@ h6 {
 
   font-display: swap;
 
-  src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewDashboard.Editorial/Fonts/BricolageGrotesque-ExtraBold.ttf') format('truetype');
+  src: url('/_Resources/Static/Packages/Flowpack.Neos.WhatsNewEditor.InMyProject/Fonts/BricolageGrotesque-ExtraBold.ttf') format('truetype');
 }
 
 html,
@@ -691,11 +691,6 @@ a {
   inset: 0px;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -733,16 +728,12 @@ a {
   width: 100%;
 }
 
-.max-w-\[1400px\] {
-  max-width: 1400px;
+.max-w-\[1500px\] {
+  max-width: 1500px;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[1500px\] {
-  max-width: 1500px;
 }
 
 .grid-cols-1 {
@@ -787,14 +778,14 @@ a {
   padding: 1rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-10 {
@@ -873,9 +864,4 @@ a {
 
 .\[\&_\.text\]\:max-w-md .text {
   max-width: 28rem;
-}
-
-iframe .\[iframe_\&\]\:mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
 }

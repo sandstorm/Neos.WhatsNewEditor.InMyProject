@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Section.TwoColumns) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Section.TwoColumns) < prototype(Neos.Fusion:Component) {
     hashLinkId = ''
     contentColumn1 = ''
     contentColumn2 = ''

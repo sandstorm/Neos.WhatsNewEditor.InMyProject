@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.ImageSizes) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.ImageSizes) < prototype(Neos.Fusion:Component) {
     type = ''
 
     @propTypes {

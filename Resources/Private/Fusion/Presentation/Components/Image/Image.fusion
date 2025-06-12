@@ -1,5 +1,5 @@
 // presentation component for the image node type
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Image) < prototype(Neos.Fusion:Component) {
     image = ''
     imageDescription = ''
 
@@ -14,7 +14,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image) < prototype
     }
 
     @private {
-        inBackend = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.InBackend
+        inBackend = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.InBackend
     }
 
     renderer = Neos.Fusion:Tag {
@@ -25,7 +25,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image) < prototype
 
         content = afx`
             {props.image}
-            <Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Description
+            <Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Image.Description
                 imageDescription={props.imageDescription}
             />
         `
@@ -33,7 +33,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image) < prototype
 }
 
 // single component to only render the image
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Only) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Component.Image.Only) < prototype(Neos.Fusion:Component) {
     imageSource = null
     imageUri = ''
     // Needed when rendering svg or gifs
@@ -76,7 +76,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Only) < prot
     }
 
     @private {
-        inBackend = Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.InBackend
+        inBackend = Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.InBackend
     }
 
     renderer = Neos.Fusion:Case {
@@ -89,7 +89,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Only) < prot
             // Also added svgs cause they need no different sizes.
             condition = ${props.fileExtension == 'gif' || props.fileExtension == 'svg'}
             renderer = afx`
-                <Flowpack.Neos.WhatsNewDashboard.Editorial:Component.ImagePlaceholder
+                <Flowpack.Neos.WhatsNewEditor.InMyProject:Component.ImagePlaceholder
                     @if.showPlaceholder={props.showImagePlaceholder && private.inBackend && !props.imageUri}
                 />
                 <img
@@ -104,7 +104,7 @@ prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Component.Image.Only) < prot
         default {
             condition = true
             renderer = afx`
-                <Flowpack.Neos.WhatsNewDashboard.Editorial:Component.ImagePlaceholder
+                <Flowpack.Neos.WhatsNewEditor.InMyProject:Component.ImagePlaceholder
                     @if.showPlaceholder={props.showImagePlaceholder && private.inBackend && !props.imageSource}
                 />
                 <Sitegeist.Kaleidoscope:Picture

@@ -30,7 +30,7 @@ After release:
 * install via composer with `composer require flowpack/neos-whatsnewdashboard-editorial`
 
 ### Usage
-* add `'Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage': true` to your root (or another) page > this is the entrypoint for the news
+* add `'Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage': true` to your root (or another) page > this is the entrypoint for the news
 * the url of this page will then be used for the [What's New Dashboard package](https://github.com/sandstorm/Neos.WhatsNewDashboard) to show the news for your project
 
 ## Image sizes

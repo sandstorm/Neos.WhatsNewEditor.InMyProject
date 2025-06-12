@@ -1,4 +1,4 @@
-prototype(Flowpack.Neos.WhatsNewDashboard.Editorial:Helper.ResourceUri) < prototype(Neos.Fusion:Component) {
+prototype(Flowpack.Neos.WhatsNewEditor.InMyProject:Helper.ResourceUri) < prototype(Neos.Fusion:Component) {
     resource = null
 
     renderer = Neos.Fusion:Case {

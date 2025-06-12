@@ -1,7 +1,7 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Document.WhatsNewDashboardPage':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage':
   superTypes:
     'Neos.Neos:Document': true
-    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral': true
+    'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.InspectorGeneral': true
   ui:
     group: whatsNewDashboard
     label: 'What’s New Dashboard Page'
@@ -11,7 +11,7 @@
       '*': false
   childNodes:
     main:
-      type: Flowpack.Neos.WhatsNewDashboard.Editorial:ContentCollection.Default
+      type: Flowpack.Neos.WhatsNewEditor.InMyProject:ContentCollection.Default
   properties:
     _hiddenInIndex:
       defaultValue: true

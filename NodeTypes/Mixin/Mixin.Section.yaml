@@ -1,4 +1,4 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.SectionTitle':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.SectionTitle':
   abstract: true
   properties:
     sectionTitle:

@@ -1,7 +1,7 @@
-'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.Image':
+'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.Image':
   abstract: true
   superTypes:
-    'Flowpack.Neos.WhatsNewDashboard.Editorial:Mixin.InspectorGeneral': true
+    'Flowpack.Neos.WhatsNewEditor.InMyProject:Mixin.InspectorGeneral': true
   properties:
     image:
       type: Neos\Media\Domain\Model\ImageInterface
