@@ -5,8 +5,8 @@ Nodetypes for the Neos CMS for creating content which then can be shown via the 
 
 ### Installation
 
-As long as it is not released:
-* add github repo to your repositories:
+As long as it is not published on packagist:
+* add github repo to your repositories in your `composer.json`:
 ```json
 "repositories": {
     ...
@@ -17,7 +17,7 @@ As long as it is not released:
     ...
 },
 ```
-* require package
+* require package in your `composer.json`:
 ```json
 "require": {
     ...,
@@ -26,7 +26,7 @@ As long as it is not released:
 }
 ```
 
-After release:
+After publishing on packagist:
 * install via composer with `composer require flowpack/neos-whatsneweditor-inmyproject`
 
 ### Usage
