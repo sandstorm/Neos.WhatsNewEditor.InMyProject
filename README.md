@@ -1,4 +1,4 @@
-# Neos.WhatsNewDashboard.Editorial
+# Neos.WhatsNewEditor.InMyProject
 Nodetypes for the Neos CMS for creating content which then can be shown via the corresponding [What's New Dashboard package](https://github.com/sandstorm/Neos.WhatsNewDashboard).
 
 ## Integration
