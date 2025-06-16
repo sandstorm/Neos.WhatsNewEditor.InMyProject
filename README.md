@@ -5,36 +5,22 @@ Nodetypes for the Neos CMS for creating content which then can be shown via the 
 
 ### Installation
 
-As long as it is not published on packagist:
-* add github repo to your repositories in your `composer.json`:
-```json
-"repositories": {
-    ...
-    "neos-whatsneweditor-inmyproject": {
-        "type": "vcs",
-        "url": "https://github.com/sandstorm/Neos.WhatsNewEditor.InMyProject"
-    },
-    ...
-},
-```
-* require package in your `composer.json` with `composer require flowpack/neos-whatsneweditor-inmyproject:@dev`, which should result in:
-```json
-"require": {
-    ...,
-    "flowpack/neos-whatsneweditor-inmyproject": "@dev",
-    ...
-}
-```
-
-After publishing on packagist:
-* install via composer with `composer require flowpack/neos-whatsneweditor-inmyproject`
+Install via composer with `composer require flowpack/neos-whatsneweditor-inmyproject`.
 
 ### Usage
-* add `'Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage': true` to your root (or another) page > this is the entrypoint for the news
-* the url of this page will then be used for the [What's New Dashboard package](https://github.com/sandstorm/Neos.WhatsNewDashboard) to show the news for your project
 
-## Image sizes
+Add `'Flowpack.Neos.WhatsNewEditor.InMyProject:Document.WhatsNewDashboardPage': true` to your root (or another) page > this is the entrypoint for the news. You then can find the page in the `What's new dashboard elements` section:
 
-We use Sitegeist.Kaleidoscope to define image srcsets. Make sure to define a reasonable value for `sizes` when
-using `Image.fusion`. For images rendered in columns there is the `ImageSizes.fusion` helper class available, intended
-to make it easier to define the `sizes` attribute for standard layouts.
+![Page Element](./docs/page.jpg)
+
+The url of this page will then be used for the [What's New Dashboard package](https://github.com/sandstorm/Neos.WhatsNewDashboard) to show the news for your project.
+
+### Components
+
+Below the main content collection you can add 2 kinds of sections. A one column section and a two column section.
+
+![Sections](./docs/sections.jpg)
+
+In those sections you can add basic content elements to structure your project news page.
+
+![Content elements](./docs/contentElements.jpg)
